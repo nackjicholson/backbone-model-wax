@@ -18,11 +18,11 @@ Contributers:
 [top](#contents)
 ### [Install](id:install)
 
-This mixin is on a team with **[backbone-collection-wax](https://github.com/CascadeEnergy/backbone-collection-wax)**.
+**This mixin is a dependency of [backbone-collection-wax](https://github.com/CascadeEnergy/backbone-collection-wax)**.
 
 Go there for more documentation.
 
-I couldn't define a circular dependency. So just don't install model-wax, go through collection-wax instead.
+**Don't install model-wax directly install collection-wax and you will also get model-wax.**
 
 Bower is a package manager for the web built by twitter, you should check it out, and download this package.
 
@@ -31,7 +31,6 @@ Bower is a package manager for the web built by twitter, you should check it out
 
 The `--save` flag will save backbone-collection-wax as a dependency in your project's `bower.json` file.
 
-By installing collection-wax you will also get model-wax. 
 
 ---
 [top](#contents)
