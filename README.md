@@ -21,7 +21,7 @@ Contributers:
 ---
 ### [Usage](id:usage)
 
-This mixin is a part of team with backbone-collection-wax. They are dependencies of each other, you need both. If you install with bower. When you get one, you get the other.
+This mixin is on a team with **[backbone-collection-wax](https://github.com/CascadeEnergy/backbone-model-wax)**. They are dependencies of each other, you need both. If you install with bower. When you get one, you get the other.
 
 A waxy backbone collection needs to at least extend collectionwax, and listen for a `wax` event to be handled by the `breathe()` method.
 
