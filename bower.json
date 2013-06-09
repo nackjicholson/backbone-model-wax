@@ -15,7 +15,6 @@
     "**/*.html"
   ],
   "dependencies": {
-    // "backbone-collection-wax": "~0.1.0",
     "backbone": "~1.0.0",
     "underscore": "~1.4.4",
     "jquery": "~2.0.2"
