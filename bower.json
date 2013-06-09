@@ -17,8 +17,7 @@
   "dependencies": {
     "backbone": "~1.0.0",
     "underscore": "~1.4.4",
-    "jquery": "~2.0.2",
-    "backbone-collection-wax": "latest"
+    "jquery": "~2.0.2 "
   },
   "devDependencies": {
     "mocha": "~1.9.0",

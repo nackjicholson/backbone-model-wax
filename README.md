@@ -21,8 +21,6 @@ Contributers:
 ---
 ### [Usage](id:usage)
 
-This mixin is on a team with **[backbone-collection-wax](https://github.com/CascadeEnergy/backbone-model-wax)**. They are dependencies of each other, you need both. If you install with bower. When you get one, you get the other.
-
 A waxy backbone collection needs to at least extend collectionwax, and listen for a `wax` event to be handled by the `breathe()` method.
 
     var MyCollection = Backbone.Collection.extend{
@@ -49,16 +47,18 @@ Also, its models need to extend modelwax.
 [top](#contents)
 ### [Install](id:install)
 
+This mixin is on a team with **[backbone-collection-wax](https://github.com/CascadeEnergy/backbone-collection-wax)**.
+
+I couldn't define a circular dependency. So just don't install model-wax, go through collection-wax instead.
+
 Bower is a package manager for the web built by twitter, you should check it out, and download this package.
 
 `$ npm install bower -g`  
-`$ bower install backbone-model-wax --save `
+`$ bower install backbone-collection-wax --save `
 
-The `--save` flag will save backbone-model-wax as a dependency in your project's `bower.json` file.
+The `--save` flag will save backbone-collection-wax as a dependency in your project's `bower.json` file.
 
-OR  
-
-Download this project, take `backbone-model-wax.js` or `backbone-model-wax.min.js` files out and put them wherever you would like.
+By installing collection-wax you will also get model-wax. 
 
 ---
 [top](#contents)
@@ -68,20 +68,7 @@ Download this project, take `backbone-model-wax.js` or `backbone-model-wax.min.j
 [top](#contents)
 ### [Example](id:example)
 
-There is a small how-to in this repository at [example/example.html](https://github.com/CascadeEnergy/backbone-model-wax/blob/master/example/example.html). 
-
-The example shows how to apply the wax mixins to keep track of selection in an unordered list. It's very simplistic, but might give you some idea of how to use the mixins.
-
-To run the example.
-
-```
-$ git clone git@github.com:CascadeEnergy/backbone-model-wax.git
-$ cd backbone-model-wax/
-$ bower install
-$ node ./util/web-server.js
-```
-
-and then navigate to <http://localhost:8000/example/example.html>
+see [collection-wax example](https://github.com/CascadeEnergy/backbone-collection-wax#example). 
 
 ---
 [top](#contents)
