@@ -2,7 +2,7 @@
 
 [![Build Status](https://secure.travis-ci.org/CascadeEnergy/backbone-model-wax.png?branch=master)](https://travis-ci.org/CascadeEnergy/backbone-model-wax)
 
-description
+Backbone.Model mixin which works with backbone-collection-wax to provide methods for controlling 'on'/'off' state in collections.
 
 Contributers:
 
@@ -10,44 +10,17 @@ Contributers:
 
 ---
 ### [Contents](id:contents)
-- [Usage](#usage)
 - [Install](#install)
-- [Why](#why)
-- [Example](#example)
-- [API](#api)
 - [Tests](#tests)
 - [Support](#support)
-
----
-### [Usage](id:usage)
-
-A waxy backbone collection needs to at least extend collectionwax, and listen for a `wax` event to be handled by the `breathe()` method.
-
-    var MyCollection = Backbone.Collection.extend{
-      model: MyModel, // see below.
-
-      initialize: function() { 
-        // Don't forget to breathe. Very Important!
-        this.on('wax', this.breathe, this)
-      }
-    }
-
-    // Mixin.
-    _.extend(MyCollection.prototype, collectionwax)
-
-Also, its models need to extend modelwax.
-
-    var MyModel = Backbone.Model.extend({
-      // do normal model stuff here.
-    })
-
-    _.extend(MyModel.prototype, modelwax)
 
 ---
 [top](#contents)
 ### [Install](id:install)
 
 This mixin is on a team with **[backbone-collection-wax](https://github.com/CascadeEnergy/backbone-collection-wax)**.
+
+Go there for more documentation.
 
 I couldn't define a circular dependency. So just don't install model-wax, go through collection-wax instead.
 
@@ -59,25 +32,6 @@ Bower is a package manager for the web built by twitter, you should check it out
 The `--save` flag will save backbone-collection-wax as a dependency in your project's `bower.json` file.
 
 By installing collection-wax you will also get model-wax. 
-
----
-[top](#contents)
-### [Why](id:why)
-
----
-[top](#contents)
-### [Example](id:example)
-
-see [collection-wax example](https://github.com/CascadeEnergy/backbone-collection-wax#example). 
-
----
-[top](#contents)
-### [API](id:api)
-
-  _documentation needed_
-
-  - **wax()**
-  - **isOn()**
 
 ---
 [top](#contents)
