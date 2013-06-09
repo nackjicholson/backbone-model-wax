@@ -21,6 +21,29 @@ Contributers:
 ---
 ### [Usage](id:usage)
 
+This mixin is a part of team with backbone-collection-wax. They are dependencies of each other, you need both. If you install with bower. When you get one, you get the other.
+
+A waxy backbone collection needs to at least extend collectionwax, and listen for a `wax` event to be handled by the `breathe()` method.
+
+    var MyCollection = Backbone.Collection.extend{
+      model: MyModel, // see below.
+
+      initialize: function() { 
+        // Don't forget to breathe. Very Important!
+        this.on('wax', this.breathe, this)
+      }
+    }
+
+    // Mixin.
+    _.extend(MyCollection.prototype, collectionwax)
+
+Also, its models need to extend modelwax.
+
+    var MyModel = Backbone.Model.extend({
+      // do normal model stuff here.
+    })
+
+    _.extend(MyModel.prototype, modelwax)
 
 ---
 [top](#contents)
@@ -47,7 +70,7 @@ Download this project, take `backbone-model-wax.js` or `backbone-model-wax.min.j
 
 There is a small how-to in this repository at [example/example.html](https://github.com/CascadeEnergy/backbone-model-wax/blob/master/example/example.html). 
 
-_description of what the example does here_
+The example shows how to apply the wax mixins to keep track of selection in an unordered list. It's very simplistic, but might give you some idea of how to use the mixins.
 
 To run the example.
 
@@ -63,6 +86,11 @@ and then navigate to <http://localhost:8000/example/example.html>
 ---
 [top](#contents)
 ### [API](id:api)
+
+  _documentation needed_
+
+  - **wax()**
+  - **isOn()**
 
 ---
 [top](#contents)
@@ -111,6 +139,7 @@ Also tests in the browser at <http://localhost:8000/testrunner.html>
 
 You can make an issue. Pull requests welcome.
 
-_your contact info here_
+[@nackjicholson](http://twitter.com/nackjicholson)
+If I'm on my computer I'll be in IRC freenode `#sensei`
 
 component generated with yeoman and [backbone-module](https://github.com/nackjicholson/generator-backbone-module)
